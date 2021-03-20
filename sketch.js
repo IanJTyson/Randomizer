@@ -16,14 +16,21 @@ let planets = [{
   color: "Blue"
 }];
 
+let randomIndex;
+
 function setup() {
   createCanvas(600, 600);
   background(220);
-
-console.log(planets[1].color);
 
 }
 
 function draw() {
 
+}
+
+function mousePressed() {
+  background(220);
+  randomIndex = int(random(planets.length));
+  text(planets[randomIndex].name, 50, 50);
+  planets.splice(randomIndex, 1);
 }
