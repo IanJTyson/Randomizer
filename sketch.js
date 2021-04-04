@@ -18,6 +18,11 @@ let planets = [{
 
 let randomIndex;
 let animating = false;
+let Jurt;
+let Mevy;
+let Suul;
+let Veis;
+let XAErf02;
 
 function setup() {
   createCanvas(600, 600);
@@ -33,7 +38,7 @@ text("Click to begin your journey!", 50, 50);
 function draw() {
 
   if(animating == true){
-    ellipse(width *.5, height *.5, random (20, 300))
+    image(Jurt, width/2, height/2);
   }
 
 }
