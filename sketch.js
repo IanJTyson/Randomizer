@@ -18,11 +18,15 @@ let planets = [{
 
 let randomIndex;
 let animating = false;
-let Jurt;
-let Mevy;
-let Suul;
-let Veis;
-let XAErf02;
+let planet = [];
+
+function preload(){
+
+for (let i = 0; i <= 4; i++){
+  planet[i] = loadImage("Images/planet_" + i + ".jpg")
+}
+
+}
 
 function setup() {
   createCanvas(600, 600);
@@ -38,7 +42,7 @@ text("Click to begin your journey!", 50, 50);
 function draw() {
 
   if(animating == true){
-    image(Jurt, width/2, height/2);
+    image(planet[0], width/2, height/2);
   }
 
 }
