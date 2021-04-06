@@ -6,7 +6,7 @@ let planets = [{
   name: "Mevy",
   char: "Basically a big ol' rock."
 }, {
-  name: "Veis",
+  name: "Vees",
   char: "Don't you know that it's toxic?"
 }, {
   name: "XAErf-02",
@@ -78,7 +78,7 @@ function randomizer(){
     randomIndex = int(random(planets.length));
     //random number tied to a planet
     text(`${planets[randomIndex].name} - characteristic:
-      
+
 ${planets[randomIndex].char}`, 50, 50);
 image(random(planet), width/2, height/2);
     //text(planets[randomIndex].name + " - characteristic: " + planets[randomIndex].char, 50, 50);
